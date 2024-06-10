@@ -1,0 +1,72 @@
+body {
+    background-image: url(背景2.jpg);
+    background-size: cover;
+}
+
+.longinarea {
+    width: 350px;
+    height: 400px;
+    border-radius: 16px;
+    margin: 0 auto;
+    margin-top: 150px;
+    /* background: rgba(238, 228, 253, 0.7); */
+    background-color: transparent;
+    box-shadow: 5px 5px 20px #a29bfe;
+}
+
+.head {
+    text-align: center;
+    height: 120px;
+    font-size: 80px;
+}
+
+.body {
+    display: block;
+    text-align: center;
+    margin: 50px auto;
+    height: 100px;
+}
+
+.boxone {
+    width: 250px;
+    margin: 30px 50px;
+    font-size: 20px;
+}
+
+/* input */
+input {
+    height: 25px;
+    border-radius: 20px;
+    border-color: rgba(173, 141, 255, 0.877);
+    background-color: #a59bdd2b;
+    /* border: 0; */
+    outline: none;
+}
+
+.button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 45px;
+    text-align: center;
+
+}
+
+.button a {
+    display: inline-block;
+    margin: 0 10px;
+    width: 60px;
+    height: 28px;
+    border-radius: 10px;
+    background-size: 80px;
+    background-color: #7ed0f7b7;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    /* font: 400 20px; */
+}
+
+/* footer {
+    margin-top: 150px;
+    text-align: center;
+    font-size: small;
+} */

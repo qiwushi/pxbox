@@ -1,0 +1,131 @@
+/* 先清除默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* display: flex;
+    justify-content: center; */
+    /* background:  */
+    /* background-color: rgb(109, 122, 240); */
+    background-image: url(at1.png), url(at.png), linear-gradient(to right, rgb(150, 107, 215), rgb(109, 122, 240));
+
+    background-size: 28%, 28%, cover;
+    background-repeat: no-repeat no-repeat;
+    background-position: left bottom, right top;
+}
+
+.maps {
+    /* margin顶部变化 */
+    margin: 80px auto 90px;
+    border: 3px solid rgb(54, 67, 188);
+    width: 750px;
+    height: 500px;
+    overflow: hidden;
+}
+
+/* 灵活布局 */
+.maps ul {
+    display: flex;
+}
+
+.maps li {
+    width: 160px;
+    height: 500px;
+    list-style: none;
+    border-left: 1px solid rgb(1, 27, 54);
+    box-shadow: 0 0 25px black;
+    transition: all 1s;
+}
+
+/* 设置图片为块元素 */
+.maps li img {
+    display: block;
+    width: 600px;
+    height: 500px;
+}
+
+.maps ul:hover li {
+    width: 50px;
+}
+
+.maps ul li:hover {
+    width: 400px;
+}
+
+/* 前版
+margin: 0 auto;
+    margin-bottom: 50px;
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgba(10, 32, 55, 0.138);  */
+
+/* 按钮水波纹 */
+.button {
+    /* display的一些属性区别 */
+    /* display: inline-block; */
+    display: block;
+    margin: -30px auto 15px;
+    width: 200px;
+
+    text-align: center;
+    /*位置属性、 z-index */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 600;
+    /* 单位 */
+    font-size: 2em;
+    padding: 0.3em 1em;
+    color: rgb(255, 255, 255);
+    border: 0.1em solid rgb(255, 255, 255);
+    border-radius: 0.5em;
+    transition: 4s;
+}
+
+.button:before,
+.button:after {
+    content: "";
+    position: absolute;
+    top: -0.5em;
+    z-index: -1;
+    width: 280%;
+    aspect-ratio: 1;
+    border: none;
+    border-radius: 40%;
+    background-color: rgb(0, 21, 255);
+    transition: 3s;
+}
+
+.button:before {
+    left: -90%;
+    transform: translate3d(0, 5em, 0) rotate(-340deg);
+}
+
+.button:after {
+    right: -90%;
+    transform: translate3d(0, 5em, 0) rotate(390deg);
+}
+
+.button:hover,
+.button:focus {
+    color: white;
+}
+
+.button:hover:before,
+.button:hover:after,
+.button:focus:before,
+.button:focus::after {
+    transform: none;
+    background-color: rgba(81, 110, 255, 0.767);
+}
+
+footer {
+    /* margin-top: 150px; */
+    text-align: center;
+    font-size: small;
+}

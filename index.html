@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="./download/font_4565565_kkvgt5e2sb/iconfont.css">
+    <link rel="stylesheet" href="./download(1)/font_4566984_eqebhq4bl3/iconfont.css">
+    <link rel="stylesheet" href="./download(2)/font_4566984_ex5l08km05o/iconfont.css">
+    <link rel="stylesheet" href="./download(3)/font_4566984_u1ro3c4xe4/iconfont.css">
+    <style>
+        /* 先清除默认样式 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 版心 */
+        .w {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+
+
+        /* shortcut */
+        .shortcut {
+            height: 30px;
+            background-color: #f1f1f1f1;
+        }
+
+        .icon-xiangsu1 {
+            font-size: larger;
+        }
+
+        .fl {
+            float: left;
+            height: 30px;
+            font-size: 25px;
+        }
+
+        .fr {
+            float: right;
+        }
+
+        .icon-home {
+            font-size: 30px;
+        }
+
+        .Login {
+            text-decoration: none;
+            color: black;
+        }
+
+        .Login:hover {
+            color: rgb(59, 5, 141);
+        }
+
+        /* header */
+        .header {
+            height: 70px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .search {
+            /* 移位置 */
+            position: absolute;
+            left: 500px;
+            top: 35px;
+            width: 400px;
+            height: 45px;
+            background-color: #cccccc;
+            border-radius: 20px;
+
+        }
+
+        .search input {
+            width: 85%;
+            height: 100%;
+            color: #fff;
+            /* 边框 */
+            border: 0;
+            outline: none;
+            margin-left: 18px;
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: transparent;
+        }
+
+        .search a {
+            text-decoration: none;
+            font-size: 35px;
+            position: absolute;
+            width: 80px;
+            height: 45px;
+        }
+
+        .icon-search-copy {
+            font-size: larger;
+        }
+
+        /* nav */
+        .nav {
+            height: 50px;
+            /* border-bottom: 2px solid rgb(255, 255, 255); */
+        }
+
+        .nav .dropdown {
+            float: left;
+            width: 100px;
+            height: 50px;
+            background-color: rgb(51, 38, 167);
+        }
+
+        .nav .navitems {
+            float: left;
+            position: relative;
+
+        }
+
+        .dropdown .dt {
+            width: 100%;
+            height: 100%;
+            color: #f1f1f1f1;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .dropdown .dd {
+            width: 100px;
+            height: 300px;
+            display: flex;
+            /* justify-content: center;
+            align-items: center; */
+            flex-direction: column;
+            background-color: rgb(51, 38, 167);
+            transition: .3s;
+            overflow: hidden;
+        }
+
+        .box {
+            text-decoration: none;
+            display: block;
+            width: 85%;
+            height: 50px;
+            border-radius: 40px;
+            margin: 5px;
+            position: relative;
+            transition: .3s;
+            color: #fff;
+        }
+
+        .box i {
+            font-size: 30px;
+            position: absolute;
+            margin: 7px 0 0 13px;
+        }
+
+        box:nth-child(1)::before,
+        box:nth-child(5)::before {
+            content: '';
+            display: b1ock;
+            width: 100%;
+            height: 2px;
+            background-color: 口rgb(55, 65, 81);
+            position: absolute;
+            bottom: -10px;
+        }
+
+        .box span {
+            position: relative;
+            top: 22px;
+            left: 80pX;
+            font: 50028px;
+            opacity: 0;
+            transition: .1s;
+
+        }
+
+
+        .dd:hover {
+            width: 260px;
+        }
+
+        .box:hover {
+            background-color: #fff;
+            color: #2e0481f1;
+        }
+
+        .dd:hover span {
+            opacity: 1;
+        }
+
+        /* main */
+        .main {
+            margin-left: 100px;
+            height: 500px;
+            /* background-color: #fff; */
+            background-color: #d0d0d0;
+
+        }
+
+        .main video {
+            float: left;
+        }
+
+        .main img {
+            float: right;
+            /* width: 211.11px; */
+            height: 500px;
+            filter: blur(2px);
+        }
+
+        .main img:hover {
+            filter: blur(0);
+        }
+
+        .content {
+            height: 600px;
+            background-color: #ffffff;
+        }
+
+        .boxone {
+            margin-top: 60px;
+            height: 450px;
+            background-color: #ffffff;
+        }
+
+        .boxone .List {
+            float: left;
+            width: 30%;
+            height: 450px;
+            background-color: #fff;
+        }
+
+        p {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 60px;
+        }
+
+        .icon-xiangsu_jiangbei {
+            font-size: 60px;
+            color: #ffdb38;
+        }
+
+        .List ul {
+            margin: 30px 60px;
+            line-height: 80px;
+            float: left;
+            font-size: 30px;
+        }
+
+        .boxone img {
+            float: right;
+            width: 60%;
+        }
+
+        .boxtwo {
+            margin-top: 120px;
+            height: 800px;
+            background-image: url(pageone.1.jpg);
+            background-size: cover;
+        }
+
+        .boxtwo .title {
+
+            display: block;
+            text-align: center;
+            font-size: 50px;
+            font-weight: 1000;
+        }
+
+        .icon-xiangsujiantou1-copy-copy {
+            font-size: 50px;
+        }
+
+        .icon-xiangsujiantou1-copy {
+            font-size: 50px;
+        }
+
+        .boxtwo a {
+            display: block;
+            /* width: 100%; */
+            width: 1000px;
+            /* height: 100%; */
+            height: 600px;
+            margin: 0 auto;
+        }
+
+        .navitems a {
+            float: left;
+            display: block;
+            width: 180px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            font-size: 16px;
+            text-decoration: none;
+
+        }
+
+        .abox {
+            position: absolute;
+            left: 0;
+            width: 180px;
+            height: 50px;
+            background-color: rgb(51, 38, 167);
+            z-index: -999;
+            transition: .8s;
+        }
+
+        a:hover {
+            color: #fff;
+        }
+
+        .navitems a:nth-child(2):hover~.abox {
+            left: 180px;
+
+        }
+
+        .navitems a:nth-child(3):hover~.abox {
+            left: 360px;
+
+        }
+
+        .navitems a:nth-child(4):hover~.abox {
+            left: 540px;
+
+        }
+
+        .navitems a:nth-child(5):hover~.abox {
+            left: 720px;
+
+        }
+
+        .content {
+            /* position: relative;
+            display: inline-block; */
+
+            text-align: center;
+
+        }
+
+        .content img {
+            /* display: block; */
+
+            margin: 0 15px;
+            height: 300px;
+        }
+
+        /* .hover-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+
+        .content:hover .hover-image {
+            display: block;
+        } */
+
+
+        .content img:hover {
+            height: 350px;
+        }
+
+
+
+        /*  底部模块  */
+        /* .footer {
+            height: 100px;
+            background-color: #c9c9c9;
+        }*/
+    </style>
+</head>
+<!-- section和div的区别 -->
+
+<body>
+    <!-- 快捷导航模块 -->
+    <section class="shortcut">
+        <div class="fl"><i class="iconfont icon-xiangsu1"></i></div>
+        <div class="fr"><a href="Login.html" target="_blank" class="Login"><i class="iconfont icon-home"></i>登录/注册</a>
+        </div>
+    </section>
+    <!-- 头部 -->
+    <header class="header">
+        <div class="search">
+            <input type="text" value="search">
+            <a href="#">
+                <i class="iconfont icon-search-copy"></i>
+            </a>
+        </div>
+    </header>
+    <!-- nav模块 -->
+    <nav class="nav">
+        <div class="w">
+            <div class="dropdown">
+                <div class="dt">像素模块</div>
+                <div class="dd">
+                    <!-- <ul style="list-style: none;"> -->
+                    <!-- <li><a href="#" class="box"><i class="iconfont icon-xiangsu_qizhi"></i><span>像素艺术家</span></a></li> -->
+                    <a href="像素艺术家.html" target="_blank" class="box"><i
+                            class="iconfont icon-user"></i><span>像素艺术家</span></a>
+                    <a href="https://www.pixilart.com/draw?ref=home-page#" target="_blank" class="box"><i
+                            class="iconfont icon-41-pixels"></i><span>像素工具箱</span></a>
+                    <a href="像素音乐块.html" target="_blank" class="box"><i
+                            class="iconfont icon-love-copy"></i><span>像素音乐块</span></a>
+                    <a href="像素游戏盒.html" target="_blank" class="box"><i
+                            class="iconfont icon-xiangsu_qizhi"></i><span>像素游戏盒</span></a>
+                    <a href="https://mp.weixin.qq.com/s/Ba_Mt3OUhdLTO_3d8ZzM_Q" target="_blank" class="box"><i
+                            class="iconfont icon-tag"></i><span>像素文章集</span></a>
+                    <!-- <li><a href="#" class="box"><i class="iconfont icon-love-copy"></i><span>像素艺术家</span></a></li> -->
+                    <!-- </ul> -->
+                </div>
+            </div>
+            <div class="navitems">
+                <!-- 快捷键ul>li*9>a -->
+                <ul style="list-style: none;">
+                    <a href=""></a>
+                    <a href="#list">List</a>
+                    <a href="#atlas">Atlas</a>
+                    <a href="https://www.4399.com/special/180_t.htm" target="_blank">4399px</a>
+                    <a href="https://dotown.maeda-design-room.net/" target="_blank">More</a>
+                    <div class="abox"></div>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <!-- main模块 -->
+    <div class="w">
+        <div class="main">
+            <video height="500" src="林中小女巫Steam.mp4" controls muted></video>
+            <img src="page11.jpg" alt="">
+        </div>
+        <div class="boxone">
+            <div class="List">
+                <a href="#" name="list"></a>
+                <p><i class="iconfont icon-xiangsu_jiangbei"></i>List</p>
+                <ul style="list-style: none;">
+                    <li><input type="checkbox" style="zoom:180%">音乐块</li>
+                    <li><input type="checkbox" style="zoom:180%">连连看</li>
+                    <li><input type="checkbox" style="zoom:180%">刮刮乐</li>
+                </ul>
+            </div>
+            <img src="retouch_2024060619553450.png" alt="">
+        </div>
+        <div class="boxtwo">
+            <div class="title"><i class="iconfont icon-xiangsujiantou1-copy-copy"></i>点一点我<i
+                    class="iconfont icon-xiangsujiantou1-copy"></i>
+                <a href="Atlas.html" target="_blank" name="atlas"></a>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- 精选图片 -->
+    <div class="content">
+        <!-- <img src="皮卡丘2.jpg" alt=""> -->
+        <!-- <img src="皮.jpg" alt="">
+        <img src="皮卡丘3.jpg" alt="">
+        <img src="皮卡丘.jpg" alt=""> -->
+
+        <img src="皮2.png" alt="">
+        <img src="皮.png" alt="">
+        <img src="皮3.png" alt="">
+        <img src="皮卡丘.png" alt="">
+
+    </div>
+    <!-- <img src="凭6.1.jpg" alt=""> -->
+    <!-- 底部模块 -->
+    <footer class="footer"></footer>
+</body>
+
+</html>

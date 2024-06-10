@@ -1,0 +1,30 @@
+{
+  "id": "4565565",
+  "name": "no name",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "24470271",
+      "name": "像素_旗帜",
+      "font_class": "xiangsu_qizhi",
+      "unicode": "ed21",
+      "unicode_decimal": 60705
+    },
+    {
+      "icon_id": "24754602",
+      "name": "lamb-love",
+      "font_class": "love",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "40517822",
+      "name": "lamb-love-copy",
+      "font_class": "love-copy",
+      "unicode": "ed22",
+      "unicode_decimal": 60706
+    }
+  ]
+}
